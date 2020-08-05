@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Classes;
 
 public class Vec {
     private byte [] v;

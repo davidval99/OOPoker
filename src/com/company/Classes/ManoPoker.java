@@ -1,30 +1,33 @@
-package com.company;
+package com.company.Classes;
 
-public class Analizador{
+import com.company.Interfaces.Mano;
 
+public class ManoPoker implements Mano {
+
+    Carta hand[] = new Carta[5];
+    Carta cartasTemporal[] = new Carta[7];
+    Vec valor = new Vec(6);
     static final int CANT_CARTAS = 5;
 
-    /*
-    static Vec analizaMano(Carta [] hand){
-        Vec v = new Vec(CANT_CARTAS+1);
-        if(esEscaleraReal(hand)){
-        //hacer el vector con 9 y ordenando el resto...
-            v.set(0,(byte)9);
-        }
-        else if(esPoker(hand)){
 
-        }
-        return v;
-        }*/
 
-    
+    public ManoPoker(Carta c0, Carta c1, Carta c2, Carta c3, Carta c4){
+        hand[0] = c0;
+        hand[1] = c1;
+        hand[2] = c2;
+        hand[3] = c3;
+        hand[4] = c4;
+        //valor = Analizador.analizaMano(hand);
+
+    }
+
     public static boolean esColor(Carta [] hand){
         boolean b = true;
         for(int i = 1; i<CANT_CARTAS && b; i++)
             b = hand[0].getPalo() == hand[i].getPalo();
         return b;
     }
-    
+
     public static boolean esEscalera(Carta [] hand){ //tomar en cuenta el AS
         int n1 = hand[0].getNumero();
         boolean b= true;
@@ -32,11 +35,11 @@ public class Analizador{
             b = (n1+i == hand[i].getNumero()) || (n1+i+9 == hand[i].getNumero());
         return b;
     }
-    
+
     private void sortNumber(Carta[] hand){
         sortNumber(hand, 0, 4);
-
     }
+
 
 
     private void sortNumber(Carta[] hand, int begin, int end){
@@ -46,17 +49,16 @@ public class Analizador{
             sortNumber(hand, begin, partitionIndex-1);
             sortNumber(hand, partitionIndex+1, end);
         }
-
     }
 
     private int partition(Carta arr[], int begin, int end) {
         int pivot = arr[end].getNumero();
         int i = (begin-1);
-     
+
         for (int j = begin; j < end; j++) {
             if (arr[j].getNumero() <= pivot) {
                 i++;
-     
+
                 Carta swapTemp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = swapTemp;
@@ -65,9 +67,9 @@ public class Analizador{
         Carta swapTemp = arr[i+1];
         arr[i+1] = arr[end];
         arr[end] = swapTemp;
-     
+
         return i+1;
     }
-}
-    
 
+
+}

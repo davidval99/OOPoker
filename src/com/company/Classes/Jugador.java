@@ -1,17 +1,16 @@
-package com.company;
+package com.company.Classes;
 
 import java.util.ArrayList;
 
 public class Jugador {
 
-    Mano manoFinal;
     String nombre;
+    ManoPoker manoPokerFinal;
     ArrayList<Carta> cartasEnMano = new ArrayList<Carta>();
-    int Dinero = 1000;
+    public int Dinero = 1000;
 
     public Jugador(String name){
         this.nombre = name;
-
     }
 
     public Jugador(){
@@ -20,6 +19,9 @@ public class Jugador {
 
     public void addCarta(Carta carta){
         cartasEnMano.add(carta);
+    }
+
+    public void mostrarCartas(){
 
     }
 
@@ -29,7 +31,6 @@ public class Jugador {
             return false;
         }
         else return true;
-
 
     }
 
@@ -42,13 +43,14 @@ public class Jugador {
         this.Dinero= 0;
     }
 
+
+
     public void Apostar(int cantidad){
 
         if(validarCantidad(cantidad)){
         this.Dinero = this.Dinero-cantidad;}
         else{
             // All in??
-            
         }
 
     }
