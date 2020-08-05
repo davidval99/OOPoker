@@ -1,6 +1,7 @@
 package com.company.Classes;
 
 public class Carta implements Comparable{
+
     int numero;
     int palo;
     

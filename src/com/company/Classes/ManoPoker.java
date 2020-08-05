@@ -11,12 +11,21 @@ public class ManoPoker implements Mano {
 
 
 
-    public ManoPoker(Carta c0, Carta c1, Carta c2, Carta c3, Carta c4){
-        hand[0] = c0;
-        hand[1] = c1;
-        hand[2] = c2;
-        hand[3] = c3;
-        hand[4] = c4;
+    public ManoPoker(){
+
+    }
+
+
+
+    public ManoPoker(Carta c0, Carta c1, Carta c2, Carta c3, Carta c4, Carta c5, Carta c6){
+        cartasTemporal[0] = c0;
+        cartasTemporal[1] = c1;
+        cartasTemporal[2] = c2;
+        cartasTemporal[3] = c3;
+        cartasTemporal[4] = c4;
+        cartasTemporal[5] = c5;
+        cartasTemporal[6] = c6;
+
         //valor = Analizador.analizaMano(hand);
 
     }
@@ -35,6 +44,7 @@ public class ManoPoker implements Mano {
             b = (n1+i == hand[i].getNumero()) || (n1+i+9 == hand[i].getNumero());
         return b;
     }
+
 
     private void sortNumber(Carta[] hand){
         sortNumber(hand, 0, 4);

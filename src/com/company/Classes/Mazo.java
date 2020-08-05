@@ -15,8 +15,8 @@ public class Mazo{
     public Mazo(boolean barajado){
         actual = 0;
         deck = new ArrayList();
-        for(int i = 0; i<52; i++)
 
+        for(int i = 0; i<52; i++)
             deck.add(new Carta(i));
         if(barajado)
             Collections.shuffle(deck);

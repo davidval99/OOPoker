@@ -1,13 +1,11 @@
 package com.company.Classes;
 
-import com.company.Interfaces.Mano;
-
 public class Analizador{
 
     //Recibe todas
 
     static final int CANT_CARTAS = 5;
-    Mano[] ManosJugadores;
+
 
     /*
     static Vec analizaMano(Carta [] hand){
@@ -22,7 +20,7 @@ public class Analizador{
         return v;
         }*/
 
-    
+
 
 
 }

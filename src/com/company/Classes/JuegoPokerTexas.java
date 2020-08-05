@@ -10,7 +10,6 @@ public class JuegoPokerTexas {
      //  Apuesta.ronda(Jugador 1,Jugador 2);
     //   mostrar1Carta();
 
-
    }
 
    void verificarRonda(){

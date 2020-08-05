@@ -2,23 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19a45c5c-485f-4cb2-90b9-63ca4ac8c420" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Classes/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Poker/META-INF/Poker.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Poker/com/company/Analizador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poker/com/company/Analizador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Poker/com/company/Jugador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poker/com/company/Jugador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Poker/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poker/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Poker/com/company/Mano.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poker/com/company/Mano.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Poker/com/company/Texas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poker/com/company/Texas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Analizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Classes/Analizador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Carta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Classes/Carta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Classes/Jugador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Mano.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Classes/ManoPoker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Mazo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Classes/Mazo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Texas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Classes/Texas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Vec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Classes/Vec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Poker/com/company/Analizador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Poker/com/company/Carta.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Poker/com/company/Combinaciones.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Poker/com/company/Jugador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Poker/com/company/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Poker/com/company/Mano.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Poker/com/company/Mazo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Poker/com/company/Poker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Poker/com/company/Texas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Poker/com/company/Vec.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Classes/Analizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Classes/Analizador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Classes/Apuesta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Classes/Apuesta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Classes/Carta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Classes/Carta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Classes/Combinaciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Classes/Combinaciones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Classes/JuegoPokerTexas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Classes/JuegoPokerTexas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Classes/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Classes/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Classes/ManoPoker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Classes/ManoPoker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Classes/Mazo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Classes/Mazo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,17 +37,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Classes/Combinaciones.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="170">
+              <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Classes/Jugador.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Classes/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="170">
+              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -53,8 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Classes/ManoPoker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="340">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="e#1041#1042#0" expanded="true" />
                 <element signature="e#1079#1080#0" expanded="true" />
@@ -66,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Classes/Analizador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="-47">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -75,12 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Classes/Apuesta.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-              <folding>
-                <element signature="e#334#335#0" expanded="true" />
-                <element signature="e#358#359#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="364">
+              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -89,7 +87,16 @@
         <entry file="file://$PROJECT_DIR$/src/com/company/Interfaces/Juego.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Classes/Carta.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -103,11 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Classes/JuegoPokerTexas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+            <state relative-caret-position="187">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -115,20 +122,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Classes/Mazo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Classes/Mesa.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="221">
+              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -175,13 +170,16 @@
         <option value="$PROJECT_DIR$/src/com/company/Vec.java" />
         <option value="$PROJECT_DIR$/src/com/company/Classes/Vec.java" />
         <option value="$PROJECT_DIR$/src/com/company/Classes/Mesa.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Classes/Combinaciones.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Classes/Analizador.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Classes/ManoPoker.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Classes/Apuesta.java" />
         <option value="$PROJECT_DIR$/src/com/company/Interfaces/Juego.java" />
         <option value="$PROJECT_DIR$/src/com/company/Interfaces/JuegoPoker.java" />
         <option value="$PROJECT_DIR$/src/com/company/Classes/JuegoPokerTexas.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Classes/Apuesta.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Classes/Carta.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Classes/Mazo.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Classes/ManoPoker.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Classes/Analizador.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Classes/Combinaciones.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Classes/Main.java" />
       </list>
     </option>
   </component>
@@ -304,18 +302,18 @@
       <workItem from="1595725492190" duration="9277000" />
       <workItem from="1595902414396" duration="4595000" />
       <workItem from="1595962770220" duration="9865000" />
-      <workItem from="1596585254540" duration="4849000" />
+      <workItem from="1596585254540" duration="8119000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32512000" />
+    <option name="totallyTimeSpent" value="35782000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17315437" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19530201" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -324,7 +322,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.46380696" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.47319034" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -386,20 +384,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Classes/Carta.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Classes/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Classes/Jugador.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -417,59 +401,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Classes/Mazo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Classes/Combinaciones.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Classes/Analizador.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Classes/ManoPoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#1041#1042#0" expanded="true" />
-            <element signature="e#1079#1080#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Classes/Apuesta.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-          <folding>
-            <element signature="e#334#335#0" expanded="true" />
-            <element signature="e#358#359#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Interfaces/Juego.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Interfaces/JuegoPoker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -477,10 +408,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Classes/Carta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Interfaces/Juego.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Classes/JuegoPokerTexas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Classes/Mazo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Classes/Apuesta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Classes/Analizador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-47">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Classes/ManoPoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Classes/Combinaciones.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Classes/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
         </state>
       </provider>
     </entry>

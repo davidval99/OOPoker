@@ -1,11 +1,43 @@
 package com.company.Classes;
 
-import static com.company.Classes.Combinaciones.combinations2;
+
+import static com.company.Classes.Combinaciones.printCombination;
 
 public class Main {
 
     public static void main(String[] args) {
 
+
+        Mazo m = new Mazo(false);
+
+
+
+        ManoPoker manoTemporal = new ManoPoker(m.deck.get(0),m.deck.get(1),
+                m.deck.get(2),m.deck.get(3),m.deck.get(4),
+                m.deck.get(5),m.deck.get(6));
+
+        System.out.println("Estas son todas las cartas del jugador disponibles");
+        System.out.println(m.deck.get(0).numero+ "  "+ m.deck.get(0).palo);
+        System.out.println(m.deck.get(1).numero+ "  "+ m.deck.get(1).palo);
+        System.out.println(m.deck.get(2).numero+ "  "+ m.deck.get(2).palo);
+        System.out.println(m.deck.get(3).numero+ "  "+ m.deck.get(3).palo);
+        System.out.println(m.deck.get(4).numero+ "  "+ m.deck.get(4).palo);
+        System.out.println(m.deck.get(5).numero+ "  "+ m.deck.get(5).palo);
+        System.out.println(m.deck.get(6).numero+ "  "+ m.deck.get(6).palo);
+
+
+
+        Carta arr[] = {m.deck.get(0),m.deck.get(1),
+                m.deck.get(2),m.deck.get(3),m.deck.get(4),
+                m.deck.get(5),m.deck.get(6)};
+
+        int r = 5;
+
+        int n = arr.length;
+
+        Combinaciones.printCombination(arr,n,r);
+
+        /*
         Mazo m = new Mazo();
 
         System.out.println("Estas son todas las cartas del jugador disponibles");
@@ -43,13 +75,13 @@ public class Main {
         for(int i = 0; i<combinaciones.length;i++){
 
             System.out.println(combinaciones[i].numero+"  "  + combinaciones[i].palo);
-
-
-
-        }
+*/
 
 
         }
+
+
+
 
 
 

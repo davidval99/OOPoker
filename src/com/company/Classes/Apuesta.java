@@ -16,6 +16,7 @@ el primero solo puede hacer check o fold*/
 
 
     public int ronda(Jugador[] jugadores){
+
         return 0;
     }
 
@@ -23,9 +24,9 @@ el primero solo puede hacer check o fold*/
     }
 
     public void bet(){
+
     }
 
     public void check(){
     }
-
 }
