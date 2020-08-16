@@ -30,17 +30,10 @@ public class ManoPoker implements Mano {
 
     }
     public static boolean esEscaleraReal(Carta [] hand){
-        boolean b = true;
-        if(!(hand == null) && (esColor(hand) == true)){
-            int valor1 = 0;
-            boolean sal = true;
-
-            for (int i = 0; i < (hand.length - 1) && (sal); i++) { //size o length
-                if (hand[i].getNumero() == hand[i+1].getNumero()) {
-                    valor1 = hand[i].getNumero();
-                    sal = false;
-                }
-            }
+        boolean b = false;
+        if(!(hand == null) && (esEscalera(hand) == true) && (esColor(hand) == true)){
+            
+            b = true;
         }
         return b;
     }
@@ -53,7 +46,7 @@ public class ManoPoker implements Mano {
             b = (n1+i == hand[i].getNumero()) || (n1+i+9 == hand[i].getNumero());
         return b;*/
         boolean salida = false;
-        if(esEscalera(hand) == true && esColor(hand) == true){
+        if((esEscalera(hand) == true) && (esColor(hand) == true)){
             salida = true;
         }
         else{
@@ -101,15 +94,24 @@ public class ManoPoker implements Mano {
                 b = hand[0].getPalo() == hand[i].getPalo();
             b = true;
         }
-        else {
-            b = false;
-        }
         return b;
     }
 
 
     public static boolean esEscalera(Carta [] hand){
-        boolean b = true;
+        boolean b = false;
+        if(!(hand == null)){
+            int valor1 = 0;
+            boolean sal = true;
+
+            for (int i = 0; i < (hand.length - 1) && (sal); i++) { //size o length
+                if (hand[i].getNumero() == hand[i+1].getNumero()) {
+                    valor1 = hand[i].getNumero();
+                    sal = false;
+                }
+            }
+            b = true;
+        }
         return b;
     }
 
@@ -174,7 +176,6 @@ public class ManoPoker implements Mano {
 
     public static boolean esCartaAlta(Carta [] m1) {
         boolean salida = false;
-
         if (!(m1 == null)) {
             int valor1 = m1[0].getNumero();
             boolean sal = true;
@@ -230,4 +231,3 @@ public class ManoPoker implements Mano {
 
 
 }
-
