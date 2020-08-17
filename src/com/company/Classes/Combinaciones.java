@@ -1,45 +1,65 @@
 package com.company.Classes;
 
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Combinaciones {
 
-    /* arr[]  ---> Input Array
-    data[] ---> Temporary array to store current combination
-    start & end ---> Staring and Ending indexes in arr[]
-    index  ---> Current index in data[]
-    r ---> Size of a combination to be printed */
-    static void combinationUtil(Carta arr[], Carta data[], int start,
-                                int end, int index, int r)
-    {
-        // Current combination is ready to be printed, print it
-        if (index == r)
-        {
-            for (int j=0; j<r; j++)
-                System.out.print(data[j].numero+" ");
-            System.out.println("");
-            return;
-        }
 
-        // replace index with all possible elements. The condition
-        // "end-i+1 >= r-index" makes sure that including one element
-        // at index will make a combination with remaining elements
-        // at remaining positions
-        for (int i=start; i<=end && end-i+1 >= r-index; i++)
-        {
-            data[index] = arr[i];
-            combinationUtil(arr, data, i+1, end, index+1, r);
+public List<Carta[]> combinar(Carta[] input, int k) {
+
+        //4c2 = 6 [mano1,mano2,mano3.....mano6]
+
+        //5c3 = 10 [mano1,mano2,mano3.....mano10]
+
+        //60
+
+
+    List<Carta[]> subsets = new ArrayList();
+
+    int[] s = new int[k];                  // aqui van los indices apuntando a los elemenots del array de entrada
+
+    if (k <= input.length) {
+        // first index sequence: 0, 1, 2, ...
+
+        for (int i = 0; (s[i] = i) < k - 1; i++) ;
+        subsets.add(getSubset(input, s));
+        for (; ; ) {
+            int i;
+            // find position of item that can be incremented
+            for (i = k - 1; i >= 0 && s[i] == input.length - k + i; i--) ;
+            if (i < 0) {
+                break;
+            }
+            s[i]++;                    // increment this item
+            for (++i; i < k; i++) {    // fill up remaining items
+                s[i] = s[i - 1] + 1;
+            }
+            subsets.add(getSubset(input, s));
         }
     }
 
-    // The main function that prints all combinations of size r
-    // in arr[] of size n. This function mainly uses combinationUtil()
-    static void printCombination(Carta arr[], int n, int r)
-    {
-        // A temporary array to store all combination one by one
-        Carta data[]=new Carta[r];
+    for (int i = 0; i < subsets.size(); i++) {
+        for (int j = 0; j < 5; j++) {
+            System.out.print(subsets.get(i)[j].numero+" ");
 
-        // Print all combination using temprary array 'data[]'
-        combinationUtil(arr, data, 0, n-1, 0, r);
+        }
+        System.out.println("siguiente");
     }
+
+    return subsets;
+
+}
+
+    // generate actual subset by index sequence
+    Carta[] getSubset(Carta[] input, int[] subset) {
+
+        Carta[] result = new Carta[subset.length];
+        for (int i = 0; i < subset.length; i++)
+            result[i] = input[subset[i]];
+
+        return result;
+    }
+
 
 }
