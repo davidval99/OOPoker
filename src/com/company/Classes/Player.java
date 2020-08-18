@@ -40,7 +40,7 @@ public class Player {
     private final Client client;
 
     /** Hand of cards. */
-    public final HandPoker handPoker;
+    public  HandPoker handPoker;
 
     /** Current amount of cash. */
     private int cash;

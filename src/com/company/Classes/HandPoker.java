@@ -3,32 +3,37 @@ package com.company.Classes;
 
 import com.company.Interfaces.Mano;
 
+import java.util.ArrayList;
 import java.util.Collection;
 
 
 public class HandPoker implements Mano {
-    
+
 
     private static final int MAX_NO_OF_CARDS = 9;
-    
-    /** The cards in this hand. */
+
+    /**
+     * The cards in this hand.
+     */
     private Card[] cards = new Card[MAX_NO_OF_CARDS];
-    
-    /** The current number of cards in this hand. */
+
+    /**
+     * The current number of cards in this hand.
+     */
     private int noOfCards = 0;
-    
+
     /**
      * Constructor for an empty hand.
      */
     public HandPoker() {
 
     }
-    
+
 
     public HandPoker(Card[] cards) {
         addCards(cards);
     }
-    
+
 
     public HandPoker(Collection<Card> cards) {
         if (cards == null) {
@@ -38,35 +43,36 @@ public class HandPoker implements Mano {
             addCard(card);
         }
     }
-    
 
-    
+
     /**
      * Returns the number of cards.
-     * 
+     *
      * @return The number of cards.
      */
     public int size() {
         return noOfCards;
     }
-    
+
     /**
      * Adds a single card.
-     * 
+     * <p>
      * The card is inserted at such a position that the hand remains sorted
      * (highest ranking cards first).
-     * 
-     * @param card
-     *            The card to add.
-     * 
-     * @throws IllegalArgumentException
-     *             If the card is null.
+     *
+     * @param card The card to add.
+     * @throws IllegalArgumentException If the card is null.
      */
+
+    public void deleteCard(int index) {
+        cards[index] = null;
+    }
+
     public void addCard(Card card) {
         if (card == null) {
             throw new IllegalArgumentException("Null card");
         }
-        
+
         int insertIndex = -1;
         for (int i = 0; i < noOfCards; i++) {
             if (card.compareTo(cards[i]) > 0) {
@@ -85,15 +91,14 @@ public class HandPoker implements Mano {
             noOfCards++;
         }
     }
-    
+
     /**
      * Adds multiple cards.
-     * 
+     * <p>
      * The cards are inserted at such a position that the hand remains sorted
      * (highest ranking cards first).
-     * 
-     * @param cards
-     *            The cards to add.
+     *
+     * @param cards The cards to add.
      */
     public void addCards(Card[] cards) {
         if (cards == null) {
@@ -106,15 +111,14 @@ public class HandPoker implements Mano {
             addCard(card);
         }
     }
-    
+
     /**
      * Adds multiple cards.
-     * 
+     * <p>
      * The cards are inserted at such a position that the hand remains sorted
      * (highest ranking cards first).
-     * 
-     * @param cards
-     *            The cards to add.
+     *
+     * @param cards The cards to add.
      */
     public void addCards(Collection<Card> cards) {
         if (cards == null) {
@@ -127,7 +131,7 @@ public class HandPoker implements Mano {
             addCard(card);
         }
     }
-    
+
     /**
      * Returns the cards.
      *
@@ -138,15 +142,17 @@ public class HandPoker implements Mano {
         System.arraycopy(cards, 0, dest, 0, noOfCards);
         return dest;
     }
-    
+
     /**
      * Removes all cards.
      */
     public void removeAllCards() {
         noOfCards = 0;
     }
-    
-    /** {@inheritDoc} */
+
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -158,5 +164,43 @@ public class HandPoker implements Mano {
         }
         return sb.toString();
     }
-    
+
+
+    public HandPoker DisposeCards(Boolean[] cards2copy) {
+
+        ArrayList<Card> newCards = new ArrayList();
+
+        int x = 0;
+        int y = 0;
+
+        for (int i = 0;i<5;i++){
+            if (!cards2copy[i]) {
+                newCards.add(this.cards[i]);
+
+            }
+
+        }
+
+        /*
+        while (y < 5) {
+            if (!cards2copy[y]) {
+                newCards.add(this.cards[x]);
+                x++;
+            }
+            y++;
+        }*/
+
+
+        HandPoker newHand = new HandPoker();
+        for (int i = 0; i < newCards.size(); i++) {
+            newHand.addCard(newCards.get(i));
+        }
+
+
+
+        return newHand;
+    }
+
+
 }
+

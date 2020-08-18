@@ -1,26 +1,9 @@
-// This file is part of the 'texasholdem' project, an open source
-// Texas Hold'em poker application written in Java.
-//
-// Copyright 2009 Oscar Stigter
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
 
 package com.company.gui;
 
 import com.company.Classes.*;
 
-import com.company.Classes.PokerGames.Omaha;
-import com.company.Classes.PokerGames.Holdem;
+import com.company.Classes.PokerGames.*;
 import com.company.actions.Action;
 
 
@@ -29,27 +12,26 @@ import java.awt.*;
 import java.util.List;
 import java.util.*;
 
-/**
- * The game's main frame.
- * 
- * This is the core class of the Swing UI client application.
- * 
- * @author Oscar Stigter
- */
+
 public class Main extends JFrame implements Client {
     
 
-    private static final int BIG_BLIND = 10;
-    
 
-    private static final int STARTING_CASH = 500;
-    
 
-    private final Holdem table;
-    
-    /** The players at the table. */
+    private static final int STARTING_CASH = 1000;
+
+
+    private FiveCards fiveCards;
+
+    private Holdem holdem;
+
+    private Omaha omaha;
+
+    private SevenCards sevenCards;
+
+
     private final Map<String, Player> players;
-    
+
 
     private final GridBagConstraints gc;
 
@@ -63,9 +45,9 @@ public class Main extends JFrame implements Client {
 
     private final Player humanPlayer2;
 
-    private String dealerName; 
+    private String dealerName;
 
-    private String actorName; 
+    private String actorName;
 
     /**
      * Constructor.
@@ -77,7 +59,7 @@ public class Main extends JFrame implements Client {
 
         super("Progra Lenguajes");
 
-        ChangeCardPanel ccp = new ChangeCardPanel();
+        //ChangeCardPanel ccp = new ChangeCardPanel();
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         getContentPane().setBackground(UIConstants.TABLE_COLOR);
@@ -101,10 +83,10 @@ public class Main extends JFrame implements Client {
 
 
 
-        table = new Omaha();
+        holdem = new Holdem();
 
         for (Player player : players.values()) {
-            table.addPlayer(player);
+            holdem.addPlayer(player);
         }
 
 
@@ -140,7 +122,7 @@ public class Main extends JFrame implements Client {
         setLocationRelativeTo(null);
         setVisible(true);
 
-        table.run();
+        holdem.run();
     }
 
     public static void main(String[] args) {

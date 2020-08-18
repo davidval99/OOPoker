@@ -79,10 +79,10 @@ public class Pot {
 
     /**
      * Indicates whether a specific player has contributed to this pot.
-     * 
+     *
      * @param player
      *            The player.
-     * 
+     *
      * @return True if the player has contributed, otherwise false.
      */
     public boolean hasContributer(Player player) {
@@ -91,7 +91,7 @@ public class Pot {
 
     /**
      * Returns the total value of this pot.
-     * 
+     *
      * @return The total value.
      */
     public int getValue() {

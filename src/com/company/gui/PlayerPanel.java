@@ -283,7 +283,7 @@ public class PlayerPanel extends JPanel {
                 card4Label.setIcon(ResourceManager.getCardImage(cards[3]));
                 card5Label.setIcon(ResourceManager.getCardImage(cards[4]));
                 card6Label.setIcon(ResourceManager.getCardImage(cards[5]));
-                card7Label.setIcon(ResourceManager.getCardImage(cards[5]));
+                card7Label.setIcon(ResourceManager.getCardImage(cards[6]));
             }
 
 
